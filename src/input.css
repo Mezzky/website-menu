@@ -7,3 +7,36 @@
 @tailwind utilities;
 
 /* Main Style */
+.navbar ul li a{
+    @apply text-dark font-semibold duration-100 hover:underline;
+}
+
+.content-home .sosmed a{
+    @apply text-dark text-lg hover:text-text duration-300;
+}
+
+/* Menu Toggle Animation */
+.hamburger-active > span:nth-child(1) {
+    @apply -rotate-[40deg];
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply w-[35px] rotate-[40deg];
+}
+
+.navbar.slide {
+    @apply visible opacity-100 backdrop-blur-sm;
+}
+
+/* Scrolled Animation */
+header.scrolled {
+    @apply mt-[20px] w-[90%] rounded-t-2xl bg-accent/95;
+}
+
+.navbar.scrolled {
+    @apply laptop:pl-32;
+}

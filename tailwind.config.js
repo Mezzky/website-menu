@@ -21,12 +21,10 @@ module.exports = {
       },
 
       colors: {
-        box: 'rgba(120, 120, 120, 0.2)',
-        text: '#FBFBFB',
-        span: '#4BA7D8',
-        main: '#500DE0',
-        boxborder: '#4D4D4D',
-        bg: '#0C0F16',
+        main: '#4A23E4',
+        dark: '#010E32',
+        text: '#515151',
+        accent: '#CEC3FC',
       },
     },
   },

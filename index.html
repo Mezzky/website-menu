@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +12,67 @@
     <!-- AOS Style -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body class="font-outfit">
     <!-- Header -->
+    <header
+        class="flex m-auto w-full fixed left-0 right-0 justify-between z-50 items-center py-4 px-5 laptop:px-4 duration-300">
+        <h2 class="font-medium text-main text-2xl">Mezzky</h2>
+        <div
+            class="navbar invisible opacity-0 p-5 m-auto w-full laptop:w-4/5 bg-white/80 flex flex-col items-start gap-10 absolute left-0 top-[64px] right-0 rounded-b-2xl duration-300 laptop:flex-row laptop:static laptop:visible laptop:opacity-100 laptop:items-center laptop:justify-between laptop:bg-transparent laptop:p-0 laptop:pl-48 laptop:-mr-[1px]">
+            <nav>
+                <ul class="flex flex-col gap-4 laptop:flex-row">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="btn flex justify-between w-full gap-4 laptop:w-52">
+                <a class="py-2 laptop:duration-100 rounded-md text-main">+62-8967-1872-255</a>
+            </nav>
+        </div>
+        <div class="menu-toggle relative flex items-center h-[30px] w-[30px] laptop:hidden">
+            <button id="hamburger" class="absolute flex flex-col items-end gap-2">
+                <span
+                    class="bg-main h-[3px] w-[35px] block transition ease-in-out duration-300 origin-top-right"></span>
+                <span class="bg-main h-[3px] w-[25px] block transition ease-in-out duration-300"></span>
+                <span
+                    class="bg-main h-[3px] w-[15px] block transition ease-in-out duration-300 origin-bottom-right"></span>
+            </button>
+        </div>
+    </header>
+
     <!-- Home -->
+    <section id="home" class="pt-28 px-5 flex flex-col gap-5">
+        <div class="content-home flex gap-4 order-2 items-center">
+            <div class="sosmed flex flex-col gap-1">
+                <a href="https://linkedin.com/in/rizky-ryan-sahadha-187161225"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Mezzky"><i class="fa-brands fa-github"></i></a>
+                <a href="https://instagram.com/mezzdev"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/mezzrysh"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.facebook.com/rizky.ryansahadha/"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="content flex flex-col gap-2">
+                <span class="text-main">Hello</span>
+                <h2 class="text-dark font-bold text-3xl">Im Ryan</h2>
+                <p>A Passionate Frontend Developer and UI/UX Designer</p>
+                <a class="bg-main text-white hover:bg-main/60 py-1 px-5 rounded-md duration-300 w-max" href="#contact">Hire Me!</a>
+            </div>
+        </div>
+        <div class="img-home order-1">
+            <img class="shadow-lg shadow-black/80 rounded-full" src="./Assets/profile-img.png" alt="Profile">
+        </div>
+    </section>
     <!-- About -->
     <!-- Expertise -->
     <!-- Projects -->
     <!-- Preview -->
     <!-- Contact -->
     <!-- Footer -->
-    
+
     <!-- Main JS -->
     <script src="./JS/script.js"></script>
     <!-- AOS -->
@@ -29,4 +81,5 @@
         AOS.init();
     </script>
 </body>
+
 </html>
