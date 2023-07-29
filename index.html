@@ -15,8 +15,7 @@
 
 <body class="font-outfit">
     <!-- Header -->
-    <header
-        class="flex m-auto w-full fixed left-0 right-0 justify-between z-50 items-center py-4 px-5 laptop:px-4 duration-300">
+    <header class="fixed flex m-auto w-full left-0 right-0 justify-between z-50 items-center py-4 px-5 laptop:px-4 duration-300">
         <h2 class="font-medium text-main text-2xl">Mezzky</h2>
         <div
             class="navbar invisible opacity-0 p-5 m-auto w-full laptop:w-4/5 bg-white/80 flex flex-col items-start gap-10 absolute left-0 top-[64px] right-0 rounded-b-2xl duration-300 laptop:flex-row laptop:static laptop:visible laptop:opacity-100 laptop:items-center laptop:justify-between laptop:bg-transparent laptop:p-0 laptop:pl-48 laptop:-mr-[1px]">
@@ -75,7 +74,7 @@
         <div class="about-content flex flex-col gap-2" data-aos="fade-right" data-aos-duration="1000">
             <h2 class="text-dark text-2xl font-bold">About Me</h2>
             <span class="text-dark">Intoduce | Experience</span>
-            <p class="text-text">My name is Rizky Ryan Sahadha, im 19 Years Old, i live in Indonesia, i have experience in Frontend development, UI/UX Design and work as a freelance forntend developer</p>
+            <p class="text-text">My name is Rizky Ryan Sahadha, im 19 Years Old, i live in Indonesia, i have experience in Frontend development, UI/UX Design and work as a freelance frontend developer</p>
             <a class="btn-link bg-main text-white hover:bg-main/60" href="./Assets/CV/ryan-resume.pdf" download>Download CV</a>
         </div>
     </section>
@@ -199,47 +198,47 @@
     </section>
 
     <!-- Skills -->
-    <section  id="service" class="pt-20 px-5 grid grid-cols-1 gap-5">
+    <section id="skill" class="py-20 px-5 grid grid-cols-1 gap-5">
         <div class="skill-content flex flex-col gap-5">
             <div class="skill-title flex flex-col gap-2" data-aos="fade-in" data-aos-duration="1000">
                 <h2 class="text-dark text-2xl font-bold">Skills & Experiences</h2>
                 <p class="text-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos laborum mollitia dolor repudiandae est.</p>
             </div>
             <h3 class="text-dark text-xl font-semibold" data-aos="fade-in" data-aos-duration="1000">My Skill</h3>
-            <div class="skill-box grid grid-cols-3 gap-5" data-aos="fade-in" data-aos-duration="1000">
-                <div class="skill flex flex-col gap-2 items-center">
+            <div class="skill-box grid grid-cols-3 gap-5">
+                <div class="skill flex flex-col gap-2 items-center" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="icon relative group rounded-full w-16 h-16 flex items-center justify-center bg-accent hover:bg-dark duration-300 cursor-pointer">
                         <img class="w-10 absolute hidden group-hover:block" src="./Assets/svg/JS-icon-white.svg" alt="icon-white">
                         <img class="w-10 group-hover:hidden" src="./Assets/svg/JS-icon-dark.svg" alt="icon-dark">
                     </div>
                     <span class="text-text">HTML/CSS/JS</span>
                 </div>
-                <div class="skill flex flex-col gap-2 items-center">
+                <div class="skill flex flex-col gap-2 items-center" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="icon relative group rounded-full w-16 h-16 flex items-center justify-center bg-accent duration-300 hover:bg-dark cursor-pointer">
                         <i class="fa-brands fa-sass text-3xl text-dark duration-300 group-hover:text-white"></i>
                     </div>
                     <span class="text-text">Sass</span>
                 </div>
-                <div class="skill flex flex-col gap-2 items-center">
+                <div class="skill flex flex-col gap-2 items-center" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="icon relative group rounded-full w-16 h-16 flex items-center justify-center bg-accent duration-300 hover:bg-dark cursor-pointer">
                         <img class="w-10 absolute hidden group-hover:block" src="./Assets/svg/tailwindcss-icon-white.svg" alt="icon-white">
                         <img class="w-10 group-hover:hidden" src="./Assets/svg/tailwindcss-icon-dark.svg" alt="icon-dark">
                     </div>
                     <span class="text-text">Tailwindcss</span>
                 </div>
-                <div class="skill flex flex-col gap-2 items-center">
+                <div class="skill flex flex-col gap-2 items-center" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="icon relative group rounded-full w-16 h-16 flex items-center justify-center bg-accent duration-300 hover:bg-dark cursor-pointer">
                         <i class="fa-brands fa-react text-3xl text-dark duration-300 group-hover:text-white"></i>
                     </div>
                     <span class="text-text">ReactJS</span>
                 </div>
-                <div class="skill flex flex-col gap-2 items-center">
+                <div class="skill flex flex-col gap-2 items-center" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="icon relative group rounded-full w-16 h-16 flex items-center justify-center bg-accent duration-300 hover:bg-dark cursor-pointer">
                         <i class="fa-brands fa-git-alt text-3xl text-dark duration-300 group-hover:text-white"></i>
                     </div>
                     <span class="text-text">Git</span>
                 </div>
-                <div class="skill flex flex-col gap-2 items-center">
+                <div class="skill flex flex-col gap-2 items-center" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="icon relative group rounded-full w-16 h-16 flex items-center justify-center bg-accent duration-300 hover:bg-dark cursor-pointer">
                         <i class="fa-brands fa-figma text-3xl text-dark duration-300 group-hover:text-white"></i>
                     </div>
@@ -247,8 +246,33 @@
                 </div>
             </div>
         </div>
-        <div class="experience">
-
+        <div class="experience flex flex-col gap-5">
+            <h2 class="text-dark font-bold text-2xl" data-aos="fade-in" data-aos-duration="1000">Experiences</h2>
+            <span class="w-full h-2 bg-main rounded-lg" data-aos="zoom-in" data-aos-duration="1000"></span>
+            <div class="experience-box flex flex-col gap-2" data-aos="fade-right" data-aos-duration="1000">
+                <p class="text-text">2020 - 2021</p>
+                <div class="exp flex flex-col gap-1">
+                    <h3 class="text-dark font-semibold text-xl">Internship UI/UX Designer</h3>
+                    <p class="text-text">Digital Lontar</p>
+                </div>
+            </div>
+            <span class="w-full h-2 bg-main rounded-lg" data-aos="zoom-in" data-aos-duration="1000"></span>
+            <div class="experience-box flex flex-col gap-2" data-aos="fade-left" data-aos-duration="1000">
+                <p class="text-text">2021 - 2022</p>
+                <div class="exp flex flex-col gap-1">
+                    <h3 class="text-dark font-semibold text-xl">Frontend Engineer</h3>
+                    <p class="text-text">Segmed Inc</p>
+                </div>
+            </div>
+            <span class="w-full h-2 bg-main rounded-lg" data-aos="zoom-in" data-aos-duration="1000"></span>
+            <div class="experience-box flex flex-col gap-2" data-aos="fade-right" data-aos-duration="1000">
+                <p class="text-text">2022 - Present</p>
+                <div class="exp flex flex-col gap-1">
+                    <h3 class="text-dark font-semibold text-xl">Freelance Frontend Developer</h3>
+                    <p class="text-text">Fiverr & Upwork</p>
+                </div>
+            </div>
+            <span class="w-full h-2 bg-main rounded-lg" data-aos="zoom-in" data-aos-duration="1000"></span>
         </div>
     </section>
 
