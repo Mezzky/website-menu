@@ -81,14 +81,14 @@
     </section>
 
     <!-- Service -->
-    <section id="service" class="py-20 px-5 flex flex-col gap-5">
+    <section id="service" class="pt-20 px-5 flex flex-col gap-5">
         <div class="service-title flex flex-col gap-1" data-aos="fade-in" data-aos-duration="1000">
             <span class="h-full w-[2px] bg-main"></span>
             <h2 class="text-dark text-2xl font-bold">Specializing In</h2>
             <p class="text-text">nec cursus vitae Lorem placerat. placerat. non In malesuada viverra odio volutpat laoreet dolor id risus tincidunt amet, tincidunt placerat </p>
         </div>
         <div class="service-card px-5 grid grid-cols-1 gap-10">
-            <div class="card group relative rounded-md pt-8 px-5 pb-12 flex flex-col gap-3 justify-center shadow-xl overflow-hidden duration-300 hover:bg-main" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card group relative rounded-md pt-8 px-5 pb-12 flex flex-col gap-3 justify-center shadow-xl overflow-hidden hover:bg-main duration-300 transition-all" data-aos="fade-right" data-aos-duration="1000">
                 <div class="bola-top top-0 left-2 absolute grid grid-cols-3 gap-1">
                     <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
                     <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
@@ -124,7 +124,7 @@
                 </div>
             </div>
 
-            <div class="card group relative rounded-md pt-8 px-5 pb-12 flex flex-col gap-3 justify-center shadow-xl overflow-hidden duration-300 hover:bg-main" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card group relative rounded-md pt-8 px-5 pb-12 flex flex-col gap-3 justify-center shadow-xl overflow-hidden hover:bg-main duration-300 transition-all" data-aos="fade-right" data-aos-duration="1000">
                 <div class="bola-top top-0 left-2 absolute grid grid-cols-3 gap-1">
                     <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
                     <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
@@ -160,7 +160,7 @@
                 </div>
             </div>
 
-            <div class="card group relative rounded-md pt-8 px-5 pb-12 flex flex-col gap-3 justify-center shadow-xl overflow-hidden duration-300 hover:bg-main" data-aos="fade-right" data-aos-duration="1000">
+            <div class="card group relative rounded-md pt-8 px-5 pb-12 flex flex-col gap-3 justify-center shadow-xl overflow-hidden hover:bg-main duration-300 transition-all" data-aos="fade-right" data-aos-duration="1000">
                 <div class="bola-top top-0 left-2 absolute grid grid-cols-3 gap-1">
                     <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
                     <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
@@ -195,6 +195,60 @@
                     <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section  id="service" class="pt-20 px-5 grid grid-cols-1 gap-5">
+        <div class="skill-content flex flex-col gap-5">
+            <div class="skill-title flex flex-col gap-2" data-aos="fade-in" data-aos-duration="1000">
+                <h2 class="text-dark text-2xl font-bold">Skills & Experiences</h2>
+                <p class="text-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos laborum mollitia dolor repudiandae est.</p>
+            </div>
+            <h3 class="text-dark text-xl font-semibold" data-aos="fade-in" data-aos-duration="1000">My Skill</h3>
+            <div class="skill-box grid grid-cols-3 gap-5" data-aos="fade-in" data-aos-duration="1000">
+                <div class="skill flex flex-col gap-2 items-center">
+                    <div class="icon relative group rounded-full w-16 h-16 flex items-center justify-center bg-accent hover:bg-dark duration-300 cursor-pointer">
+                        <img class="w-10 absolute hidden group-hover:block" src="./Assets/svg/JS-icon-white.svg" alt="icon-white">
+                        <img class="w-10 group-hover:hidden" src="./Assets/svg/JS-icon-dark.svg" alt="icon-dark">
+                    </div>
+                    <span class="text-text">HTML/CSS/JS</span>
+                </div>
+                <div class="skill flex flex-col gap-2 items-center">
+                    <div class="icon relative group rounded-full w-16 h-16 flex items-center justify-center bg-accent duration-300 hover:bg-dark cursor-pointer">
+                        <i class="fa-brands fa-sass text-3xl text-dark duration-300 group-hover:text-white"></i>
+                    </div>
+                    <span class="text-text">Sass</span>
+                </div>
+                <div class="skill flex flex-col gap-2 items-center">
+                    <div class="icon relative group rounded-full w-16 h-16 flex items-center justify-center bg-accent duration-300 hover:bg-dark cursor-pointer">
+                        <img class="w-10 absolute hidden group-hover:block" src="./Assets/svg/tailwindcss-icon-white.svg" alt="icon-white">
+                        <img class="w-10 group-hover:hidden" src="./Assets/svg/tailwindcss-icon-dark.svg" alt="icon-dark">
+                    </div>
+                    <span class="text-text">Tailwindcss</span>
+                </div>
+                <div class="skill flex flex-col gap-2 items-center">
+                    <div class="icon relative group rounded-full w-16 h-16 flex items-center justify-center bg-accent duration-300 hover:bg-dark cursor-pointer">
+                        <i class="fa-brands fa-react text-3xl text-dark duration-300 group-hover:text-white"></i>
+                    </div>
+                    <span class="text-text">ReactJS</span>
+                </div>
+                <div class="skill flex flex-col gap-2 items-center">
+                    <div class="icon relative group rounded-full w-16 h-16 flex items-center justify-center bg-accent duration-300 hover:bg-dark cursor-pointer">
+                        <i class="fa-brands fa-git-alt text-3xl text-dark duration-300 group-hover:text-white"></i>
+                    </div>
+                    <span class="text-text">Git</span>
+                </div>
+                <div class="skill flex flex-col gap-2 items-center">
+                    <div class="icon relative group rounded-full w-16 h-16 flex items-center justify-center bg-accent duration-300 hover:bg-dark cursor-pointer">
+                        <i class="fa-brands fa-figma text-3xl text-dark duration-300 group-hover:text-white"></i>
+                    </div>
+                    <span class="text-text">Figma</span>
+                </div>
+            </div>
+        </div>
+        <div class="experience">
+
         </div>
     </section>
 
