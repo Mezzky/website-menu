@@ -7,12 +7,20 @@
 @tailwind utilities;
 
 /* Main Style */
-.navbar ul li a{
-    @apply text-dark font-semibold duration-100 hover:underline;
+.links{
+    @apply text-dark font-semibold duration-100 relative;
+}
+.links::after{
+    content: '';
+    @apply bg-dark w-0 h-[2px] absolute left-0 bottom-0 hover:w-full duration-300;
+}
+
+.btn-link{
+    @apply py-1 px-6 rounded-md duration-300 w-max font-semibold;
 }
 
 .content-home .sosmed a{
-    @apply text-dark text-lg hover:text-text duration-300;
+    @apply text-dark text-xl hover:text-text duration-300;
 }
 
 /* Menu Toggle Animation */
@@ -29,14 +37,10 @@
 }
 
 .navbar.slide {
-    @apply visible opacity-100 backdrop-blur-sm;
+    @apply visible opacity-100 backdrop-blur-md;
 }
 
 /* Scrolled Animation */
 header.scrolled {
-    @apply mt-[20px] w-[90%] rounded-t-2xl bg-accent/95;
-}
-
-.navbar.scrolled {
-    @apply laptop:pl-32;
+    @apply bg-white;
 }

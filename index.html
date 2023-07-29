@@ -22,16 +22,16 @@
             class="navbar invisible opacity-0 p-5 m-auto w-full laptop:w-4/5 bg-white/80 flex flex-col items-start gap-10 absolute left-0 top-[64px] right-0 rounded-b-2xl duration-300 laptop:flex-row laptop:static laptop:visible laptop:opacity-100 laptop:items-center laptop:justify-between laptop:bg-transparent laptop:p-0 laptop:pl-48 laptop:-mr-[1px]">
             <nav>
                 <ul class="flex flex-col gap-4 laptop:flex-row">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Services</a></li>
-                    <li><a href="#skill">Skills</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="links" href="#home">Home</a></li>
+                    <li><a class="links" href="#about">About</a></li>
+                    <li><a class="links" href="#service">Services</a></li>
+                    <li><a class="links" href="#skill">Skills</a></li>
+                    <li><a class="links" href="#project">Projects</a></li>
+                    <li><a class="links" href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <nav class="btn flex justify-between w-full gap-4 laptop:w-52">
-                <a class="py-2 laptop:duration-100 rounded-md text-main">+62-8967-1872-255</a>
+                <a class="py-2 laptop:duration-100 rounded-md text-main hover:underline cursor-pointer">+62-8967-1872-255</a>
             </nav>
         </div>
         <div class="menu-toggle relative flex items-center h-[30px] w-[30px] laptop:hidden">
@@ -47,7 +47,7 @@
 
     <!-- Home -->
     <section id="home" class="pt-28 px-5 flex flex-col gap-5">
-        <div class="content-home flex gap-4 order-2 items-center" data-aos="fade-right">
+        <div class="content-home flex gap-4 order-2 items-center" data-aos="fade-right" data-aos-duration="1000">
             <div class="sosmed flex flex-col gap-1">
                 <a href="https://linkedin.com/in/rizky-ryan-sahadha-187161225"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/Mezzky"><i class="fa-brands fa-github"></i></a>
@@ -58,16 +58,146 @@
             <div class="content flex flex-col gap-2">
                 <span class="text-main">Hello</span>
                 <h2 class="text-dark font-bold text-3xl">Im Ryan</h2>
-                <p>A Passionate Frontend Developer and UI/UX Designer</p>
-                <a class="bg-main text-white hover:bg-main/60 py-1 px-5 rounded-md duration-300 w-max" href="#contact">Hire Me!</a>
+                <p class="text-text">A Passionate Frontend Developer and UI/UX Designer</p>
+                <a class="btn-link bg-main text-white hover:bg-main/60" href="#contact">Hire Me!</a>
             </div>
         </div>
-        <div class="img-home order-1" data-aos="fade-in">
-            <img class="shadow-lg shadow-black/80 rounded-full" src="./Assets/profile-img.png" alt="Profile">
+        <div class="img-home order-1" data-aos="fade-in" data-aos-duration="1000">
+            <img class="shadow-2xl rounded-full" src="./Assets/profile-img.png" alt="Profile">
         </div>
     </section>
+
     <!-- About -->
-    <!-- Expertise -->
+    <section id="about" class="pt-20 px-5 flex flex-col gap-5">
+        <div class="about-img" data-aos="fade-in" data-aos-duration="1000">
+            <img class="rounded-lg" src="./Assets/about-img.png" alt="About">
+        </div>
+        <div class="about-content flex flex-col gap-2" data-aos="fade-right" data-aos-duration="1000">
+            <h2 class="text-dark text-2xl font-bold">About Me</h2>
+            <span class="text-dark">Intoduce | Experience</span>
+            <p class="text-text">My name is Rizky Ryan Sahadha, im 19 Years Old, i live in Indonesia, i have experience in Frontend development, UI/UX Design and work as a freelance forntend developer</p>
+            <a class="btn-link bg-main text-white hover:bg-main/60" href="./Assets/CV/ryan-resume.pdf" download>Download CV</a>
+        </div>
+    </section>
+
+    <!-- Service -->
+    <section id="service" class="py-20 px-5 flex flex-col gap-5">
+        <div class="service-title flex flex-col gap-1" data-aos="fade-in" data-aos-duration="1000">
+            <span class="h-full w-[2px] bg-main"></span>
+            <h2 class="text-dark text-2xl font-bold">Specializing In</h2>
+            <p class="text-text">nec cursus vitae Lorem placerat. placerat. non In malesuada viverra odio volutpat laoreet dolor id risus tincidunt amet, tincidunt placerat </p>
+        </div>
+        <div class="service-card px-5 grid grid-cols-1 gap-10">
+            <div class="card group relative rounded-md pt-8 px-5 pb-12 flex flex-col gap-3 justify-center shadow-xl overflow-hidden duration-300 hover:bg-main" data-aos="fade-right" data-aos-duration="1000">
+                <div class="bola-top top-0 left-2 absolute grid grid-cols-3 gap-1">
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                </div>
+                <span class="h-full w-1 bg-red-500 absolute left-0 bottom-0 rounded-tl-full rounded-bl-full group-hover:bg-dark"></span>
+                <h3 class="z-10 text-2xl font-semibold text-dark duration-300 group-hover:text-white">UI/UX Design</h3>
+                <p class="z-10 text-text duration-300 group-hover:text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sit.</p>
+                <a class="z-10 text-main duration-300 group-hover:text-white w-max" href="">Read More</a>
+                <div class="bola-bot bottom-4 right-4 absolute grid grid-cols-4 gap-1">
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                </div>
+            </div>
+
+            <div class="card group relative rounded-md pt-8 px-5 pb-12 flex flex-col gap-3 justify-center shadow-xl overflow-hidden duration-300 hover:bg-main" data-aos="fade-right" data-aos-duration="1000">
+                <div class="bola-top top-0 left-2 absolute grid grid-cols-3 gap-1">
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                </div>
+                <span class="h-full w-1 bg-emerald-500 absolute left-0 bottom-0 rounded-tl-full rounded-bl-full group-hover:bg-dark"></span>
+                <h3 class="z-10 text-2xl font-semibold text-dark duration-300 group-hover:text-white">Web Development</h3>
+                <p class="z-10 text-text duration-300 group-hover:text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sit.</p>
+                <a class="z-10 text-main duration-300 group-hover:text-white w-max" href="">Read More</a>
+                <div class="bola-bot bottom-4 right-4 absolute grid grid-cols-4 gap-1">
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                </div>
+            </div>
+
+            <div class="card group relative rounded-md pt-8 px-5 pb-12 flex flex-col gap-3 justify-center shadow-xl overflow-hidden duration-300 hover:bg-main" data-aos="fade-right" data-aos-duration="1000">
+                <div class="bola-top top-0 left-2 absolute grid grid-cols-3 gap-1">
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                </div>
+                <span class="h-full w-1 bg-yellow-500 absolute left-0 bottom-0 rounded-tl-full rounded-bl-full group-hover:bg-dark"></span>
+                <h3 class="z-10 text-2xl font-semibold text-dark duration-300 group-hover:text-white">Responsive Design</h3>
+                <p class="z-10 text-text duration-300 group-hover:text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, sit.</p>
+                <a class="z-10 text-main duration-300 group-hover:text-white w-max" href="">Read More</a>
+                <div class="bola-bot bottom-4 right-4 absolute grid grid-cols-4 gap-1">
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                    <span class="w-[6px] h-[6px] bg-white rounded-full"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects -->
     <!-- Preview -->
     <!-- Contact -->
