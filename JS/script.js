@@ -3,6 +3,7 @@ const hamburger = document.querySelector('#hamburger');
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector("header .navbar");
 const header = document.querySelector('header');
+const year = document.getElementById('year');
 
 
 // Scrolled Animation
@@ -26,3 +27,7 @@ menuToggle.addEventListener('click', () => {
     nav.classList.toggle('slide');
     // header.classList.remove('slide');
 });
+
+// Copyright
+let date = new Date().getFullYear();
+year.innerHTML = date;
