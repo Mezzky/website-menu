@@ -19,7 +19,7 @@
     @apply py-1 px-6 rounded-md duration-300 w-max font-semibold;
 }
 
-.content-home .sosmed a{
+.sosmed-links{
     @apply text-dark text-xl hover:text-text duration-300;
 }
 

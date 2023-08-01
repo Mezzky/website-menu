@@ -602,6 +602,22 @@ video {
   order: 2;
 }
 
+.col-start-2{
+  grid-column-start: 2;
+}
+
+.col-start-1{
+  grid-column-start: 1;
+}
+
+.col-end-2{
+  grid-column-end: 2;
+}
+
+.row-start-1{
+  grid-row-start: 1;
+}
+
 .m-auto{
   margin: auto;
 }
@@ -763,6 +779,10 @@ video {
   gap: 1.25rem;
 }
 
+.self-end{
+  align-self: flex-end;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -851,12 +871,12 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
-.p-5{
-  padding: 1.25rem;
-}
-
 .p-2{
   padding: 0.5rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .px-10{
@@ -903,10 +923,6 @@ video {
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-5{
-  padding-top: 1.25rem;
 }
 
 .text-center{
@@ -1045,7 +1061,7 @@ video {
   transition-duration: 300ms;
 }
 
-.content-home .sosmed a{
+.sosmed-links{
   font-size: 1.25rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
@@ -1053,7 +1069,7 @@ video {
   transition-duration: 300ms;
 }
 
-.content-home .sosmed a:hover{
+.sosmed-links:hover{
   --tw-text-opacity: 1;
   color: rgb(81 81 81 / var(--tw-text-opacity));
 }
@@ -1090,6 +1106,16 @@ video {
 header.scrolled{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:translate-y-1:hover{
+  --tw-translate-y: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:-translate-y-1:hover{
+  --tw-translate-y: -0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:bg-dark:hover{
@@ -1133,9 +1159,28 @@ header.scrolled{
 }
 
 @media (min-width: 768px){
-  .tablet\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .tablet\:col-start-2{
+    grid-column-start: 2;
+  }
+
+  .tablet\:row-start-1{
+    grid-row-start: 1;
+  }
+
+  .tablet\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tablet\:flex-row{
+    flex-direction: row;
+  }
+
+  .tablet\:flex-row-reverse{
+    flex-direction: row-reverse;
+  }
+
+  .tablet\:p-8{
+    padding: 2rem;
   }
 
   .tablet\:px-10{
