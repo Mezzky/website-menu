@@ -8,7 +8,7 @@
 
 /* Main Style */
 .links{
-    @apply text-dark font-semibold duration-100 relative;
+    @apply text-dark font-semibold duration-100 relative laptop:text-lg;
 }
 .links::after{
     content: '';
@@ -16,11 +16,11 @@
 }
 
 .btn-link{
-    @apply py-1 px-6 rounded-md duration-300 w-max font-semibold;
+    @apply py-1 px-6 rounded-md duration-300 w-max font-semibold laptop:text-2xl laptop:py-2 laptop:px-10;
 }
 
 .sosmed-links{
-    @apply text-dark text-xl hover:text-text duration-300;
+    @apply text-dark text-xl laptop:text-3xl hover:scale-110 duration-300;
 }
 
 /* Menu Toggle Animation */
