@@ -1,3 +1,3 @@
 # Menu Website
-Menu Website Design by Rizky Ryan Sahadha <br>
+M enu Website Design by Rizky Ryan Sahadha <br>
 Link Preview : https://mezzky.github.io/website-menu
