@@ -372,6 +372,15 @@ header{
 /* Akhir Animasi */
 
 /* Ikon Syle */
+.fa-font{
+    color: coral;
+}
+.fa-shapes{
+    color: rgb(253, 52, 76);
+}
+.fa-fonticons{
+    color: rgb(127, 80, 255);
+}
 .fa-school{
     color: #213b52;
 }
@@ -391,7 +400,7 @@ header{
     color: rgb(104, 99, 99);
 }
 .fa-palette{
-    color: rgb(233, 233, 109);
+    color: rgb(245, 245, 81);
 }
 .fa-laptop-code{
     color: silver;
